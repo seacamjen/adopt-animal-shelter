@@ -4,4 +4,8 @@ class Animal {
   public String mGender;
   public int mWeight;
   public int mHeight;
+
+  public boolean insidePet(int maxWeight){
+    return (mWeight < maxWeight);
+  }
 }
