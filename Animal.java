@@ -22,4 +22,6 @@ class Animal {
   public void setAdoptedTrue() {
     mAdopted = true;
   }
+
+
 }
