@@ -5,7 +5,15 @@ class Animal {
   public int mWeight;
   public int mHeight;
 
-  public boolean insidePet(int maxWeight){
-    return (mWeight < maxWeight);
+  public Animal( int age, String species, String gender, int weight, int height){
+    mAge = age;
+    mSpecies = species;
+    mGender = gender;
+    mWeight = weight;
+    mHeight = height;
+  }
+
+  public boolean insidePet(int maxWeight, int maxAge){
+    return (mWeight < maxWeight && mAge < maxAge);
   }
 }
