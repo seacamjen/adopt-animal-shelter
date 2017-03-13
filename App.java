@@ -10,6 +10,8 @@ public class App {
     Animal mouse = new Animal(6, "White", "Female", 1, 3);
     Animal donkey = new Animal(5, "Black", "Male", 90, 45);
 
+    donkey.setAdoptedTrue();
+
     System.out.println("What is the max weight of animals in your house?");
     int maxWeight = Integer.parseInt(console.readLine());
 
@@ -28,6 +30,7 @@ public class App {
         System.out.println(animal.mGender);
         System.out.println(animal.mWeight);
         System.out.println(animal.mHeight);
+        System.out.println(animal.mAdopted);
       }
     }
   }
